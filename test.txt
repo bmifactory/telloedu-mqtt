@@ -1,9 +1,0 @@
-scan 1
-battery_check 5
-correct_ip
-1=0TQDG2KEDB94U4
-1>takeoff
-1>mon
-1>go 00 0 100 60 m1
-#sync 15
-1>land
