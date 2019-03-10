@@ -2,7 +2,7 @@
 Tello Edu manipulation through MQTT protocol
 """
 #import time
-#import sys, os
+import sys, os
 import pygame
 from pygame import *
 from fly_tello import FlyTello
@@ -29,8 +29,8 @@ rot_flag = False
 # Set pygame parameter
 fullscreen = False
 os.environ['SDL_VIDEO_WINDOW_POS']="%d, %d" % (1360,0)
-bg_file_1="Tello_bg_1.jpg"
-bg_file_2="Tello_bg_2.jpg"
+bg_file_1="images/tello_bg1.jpg"
+bg_file_2="images/tello_bg2.jpg"
 message_max = 6
 message_list = list(range(message_max))
 event_log = 0
