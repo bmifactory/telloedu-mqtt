@@ -2,7 +2,7 @@
 Tello Edu manipulation through MQTT protocol
 """
 #import time
-import sys, os
+#import sys, os
 import pygame
 from pygame import *
 from fly_tello import FlyTello
@@ -301,14 +301,14 @@ def main():
                     msg = 'Swarm'
                     if n_drones == 1:
                         drone.reorient(height=80, tello=1, pad='m-2')
-                        drone.straight_from_pad(x=30, y=0, z=50, speed=100, tello=1. pad='m-2')
+                        drone.straight_from_pad(x=30, y=0, z=50, speed=100, tello=1, pad='m-2')
                     elif n_drones == 2:
                         drone.reorient(height=80, pad='m-2')
                         with drone.sync_these():
-                            drone.straight_from_pad(x=30, y=0, z=120, speed=100, tello=1. pad='m-2')
-                            drone.straight_from_pad(x=-30, y=0, z=120, speed=100, tello=1. pad='m-2')
-                            drone.straight_from_pad(x=0, y=0, z=50, speed=100, tello=1. pad='m-2')
-                            drone.straight_from_pad(x=-0, y=0, z=50, speed=100, tello=1. pad='m-2')
+                            drone.straight_from_pad(x=30, y=0, z=120, speed=100, tello=1, pad='m-2')
+                            drone.straight_from_pad(x=-30, y=0, z=120, speed=100, tello=1, pad='m-2')
+                            drone.straight_from_pad(x=0, y=0, z=50, speed=100, tello=1, pad='m-2')
+                            drone.straight_from_pad(x=-0, y=0, z=50, speed=100, tello=1, pad='m-2')
                 elif event.key == K_LEFT:
                     msg = 'left'
                     if n_drones == 1:
